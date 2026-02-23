@@ -25,6 +25,17 @@ function CameraFeedCard({
   location: string;
   delay: string;
 }) {
+
+
+const [time, setTime] = useState<string>("");
+
+useEffect(() => {
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  setTime(new Date().toLocaleTimeString());
+}, []);
+
+
+
   return (
     <div
       className="relative rounded-xl overflow-hidden bg-[#1C1C1F] border border-white/10 shadow-xl"
@@ -71,7 +82,7 @@ function CameraFeedCard({
 
         {/* Timestamp */}
         <div className="absolute top-2 right-3 text-white/50 text-[10px] font-mono">
-          {new Date().toLocaleTimeString()}
+          {time}
         </div>
       </div>
 
