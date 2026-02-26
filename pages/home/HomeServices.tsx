@@ -469,7 +469,7 @@ export default function ServicesSection() {
                   className="text-white font-black text-2xl md:text-3xl leading-tight"
                   style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                 >
-                  Get a Free Security Assessment
+                  Get a Security Assessment
                 </h3>
                 <p
                   className="text-white/50 text-sm mt-2 max-w-md"
